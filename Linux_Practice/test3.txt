@@ -1,0 +1,1 @@
+It was so hard to get git bash to work with python, so I gave up on that part. I even reset my computer for this assignment.
