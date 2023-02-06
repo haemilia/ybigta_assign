@@ -1,0 +1,4 @@
+SELECT Categories.CategoryName, count(Products.ProductID) AS ProductCount
+FROM Products
+INNER JOIN Categories ON Products.CategoryID = Categories.CategoryID
+GROUP BY Categories.CategoryName

@@ -1,0 +1,7 @@
+SELECT CustomerName
+FROM 
+((Orders AS O INNER JOIN OrderDetails as OD ON O.OrderID = OD.OrderID)
+INNER JOIN Customers as C ON O.CustomerID = C.CustomerID)
+INNER JOIN Products as P ON OD.ProductID = P.ProductID
+WHERE 
+P.Price * OD.Quantity >= 10000
